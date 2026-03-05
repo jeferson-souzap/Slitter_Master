@@ -14,5 +14,13 @@ namespace Slitter_Mater.Plano_corte
         {
             InitializeComponent();
         }
+
+        #region Area de botões
+        private void bt_fechar_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        #endregion
     }
 }

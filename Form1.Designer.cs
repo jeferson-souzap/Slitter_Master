@@ -57,6 +57,7 @@
             bt_config.TabIndex = 4;
             bt_config.Text = "Configuração";
             bt_config.UseVisualStyleBackColor = true;
+            bt_config.Click += bt_config_Click;
             // 
             // bt_relatorios
             // 
@@ -84,6 +85,7 @@
             bt_plano_corte.TabIndex = 1;
             bt_plano_corte.Text = "Plano de Corte";
             bt_plano_corte.UseVisualStyleBackColor = true;
+            bt_plano_corte.Click += bt_plano_corte_Click;
             // 
             // bt_necessidade_prod
             // 
@@ -98,9 +100,9 @@
             // panel_rodape
             // 
             panel_rodape.Dock = DockStyle.Bottom;
-            panel_rodape.Location = new Point(0, 530);
+            panel_rodape.Location = new Point(0, 578);
             panel_rodape.Name = "panel_rodape";
-            panel_rodape.Size = new Size(995, 32);
+            panel_rodape.Size = new Size(1079, 32);
             panel_rodape.TabIndex = 2;
             // 
             // panel_esquerda
@@ -114,22 +116,24 @@
             panel_esquerda.Dock = DockStyle.Left;
             panel_esquerda.Location = new Point(0, 0);
             panel_esquerda.Name = "panel_esquerda";
-            panel_esquerda.Size = new Size(135, 530);
+            panel_esquerda.Size = new Size(135, 578);
             panel_esquerda.TabIndex = 3;
             // 
             // panel_central
             // 
+            panel_central.AutoSize = true;
             panel_central.Dock = DockStyle.Fill;
             panel_central.Location = new Point(135, 0);
             panel_central.Name = "panel_central";
-            panel_central.Size = new Size(860, 530);
+            panel_central.Size = new Size(944, 578);
             panel_central.TabIndex = 4;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(995, 562);
+            AutoSize = true;
+            ClientSize = new Size(1079, 610);
             Controls.Add(panel_central);
             Controls.Add(panel_esquerda);
             Controls.Add(panel_rodape);
@@ -138,6 +142,7 @@
             Text = "Slitter Master";
             panel_esquerda.ResumeLayout(false);
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion

@@ -14,5 +14,10 @@ namespace Slitter_Mater.Necessidade_prod
         {
             InitializeComponent();
         }
+
+        private void bt_fechar_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
