@@ -38,6 +38,7 @@ namespace Slitter_Mater
         private void bt_config_Click(object sender, EventArgs e)
         {
             Abrir_janelas(new Form_config());
+        // ddd
         }
     }
 }
